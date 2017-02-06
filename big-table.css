@@ -60,8 +60,4 @@ table {
                 text-transform: uppercase;
                 font-weight: bold;
             }
-
-                table td:before:first-child {
-                    text-align: left;
-                }
 }

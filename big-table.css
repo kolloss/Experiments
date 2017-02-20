@@ -16,6 +16,27 @@ table tr {
     padding: 5px;*/
 }
 
+table tr td:nth-child(1) {
+    text-align: right;
+    vertical-align: top;
+}
+
+table tr td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+    padding: 0;
+    margin: 0;
+}
+
+table tr td:nth-child(4) td {
+    text-align: left;
+    height: 3em;
+    vertical-align: top;
+}
+
+table tr td:nth-child(5) td, td:nth-child(6) td, td:nth-child(7) td {
+    height: 3em;
+    vertical-align: top;
+}
+
 table th, table td {
     padding: 10px;
     text-align: center;
@@ -40,6 +61,7 @@ table th {
     vertical-align: bottom;
     text-align: right
 }
+
 .s_orange_bold {
     color: #CD3E0C;
     text-transform: uppercase;
@@ -84,5 +106,26 @@ table th {
         float: left;
         text-transform: uppercase;
         font-weight: bold;
+    }
+
+    table tr td:nth-child(4) {
+        display: none;
+    }
+
+    table tr td:nth-child(1) {
+        text-decoration: underline;
+        font-size: 1em;
+    }
+    table tr td:nth-child(1):before{
+        font-weight: normal;
+    }
+
+    table tr td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+        padding: 10px;
+    }
+
+    table tr td:nth-child(5) td, td:nth-child(6) td, td:nth-child(7) td {
+        height: 0em;
+        vertical-align: top;
     }
 }

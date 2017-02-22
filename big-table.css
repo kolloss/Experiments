@@ -82,7 +82,7 @@ table th {
     }
 
     .show {
-        display: inherit;
+        display: block;
     }
 
     table {
@@ -132,7 +132,7 @@ table th {
     table tr td:nth-child(1):before{
         font-weight: normal;
     }
-    table tr.main{
+    .main{
         cursor: pointer;
     }
 

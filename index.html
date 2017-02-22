@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Big table (adaptive)</title>
     <link rel="stylesheet" href="big-table.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <table>
@@ -29,10 +30,10 @@
     <tbody>
     <!-- Исходящие письма -->
     <tr class="bg_grey" style="border-top: 1px solid #C0C0C0">
-        <td data-label="-" class="textMobile">Исходящие письма</td>
-        <td data-label="Среднее кол-во документов в день (шт.)" class="s_orange_bold">10</td>
-        <td data-label="Кол-во стр." valign="top">10</td>
-        <td data-label="Вид операции">
+        <td data-label="-" class="textMobile main">Исходящие письма</td>
+        <td data-label="Среднее кол-во документов в день (шт.)" class="s_orange_bold show">10</td>
+        <td data-label="Кол-во стр." valign="top" class="show">10</td>
+        <td data-label="Вид операции" class="show">
             <table>
                 <tr>
                     <td data-label="1)" style="text-align: left;">Консолидация изменений в документе</td>
@@ -42,7 +43,7 @@
                 </tr>
             </table>
         </td>
-        <td data-label="Время обработки 1 стр. (мин.)" >
+        <td data-label="Время обработки 1 стр. (мин.)" class="show">
             <table>
                 <tr>
                     <td data-label="1) Консолидация изменений в документе">10</td>
@@ -52,7 +53,7 @@
                 </tr>
             </table>
         </td>
-        <td data-label="Вовлечённых сотрудников">
+        <td data-label="Вовлечённых сотрудников" class="show">
             <table>
                 <tr>
                     <td data-label="1) Консолидация изменений в документе">1</td>
@@ -62,10 +63,11 @@
                 </tr>
             </table>
         </td>
-        <td data-label="Годовые потери по типу операции, руб">
+        <td data-label="Годовые потери по типу операции, руб" class="show">
             <table>
                 <tr>
-                    <td data-label="1) Консолидация изменений в документе" class="s_orange_bold">- 175 000 Р<br/><br/></td>
+                    <td data-label="1) Консолидация изменений в документе" class="s_orange_bold">- 175 000 Р<br/><br/>
+                    </td>
                 </tr>
                 <tr>
                     <td data-label="2) Согласование и подписание" class="s_orange_bold">- 157 500 Р<br/><br/></td>
@@ -78,7 +80,7 @@
     <tr>
         <td data-label="-" class="textMobile">Договоры и Дополнительные соглашения</td>
         <td data-label="Среднее кол-во документов в день (шт.)" class="s_orange_bold">10</td>
-        <td data-label="Кол-во стр."valign="top">10</td>
+        <td data-label="Кол-во стр." valign="top">10</td>
         <td data-label="Вид операции" style="padding: 0; margin: 0;">
             <table>
                 <tr>
@@ -242,10 +244,14 @@
                     <td data-label="2) Передача счёта на оплату в бухгалтерию" class="s_orange_bold">- 26 250 Р</td>
                 </tr>
                 <tr>
-                    <td data-label="3) Поиск сотрудником бухгалтерии договора для проверки условий отплаты" class="s_orange_bold">- 26 250 Р</td>
+                    <td data-label="3) Поиск сотрудником бухгалтерии договора для проверки условий отплаты"
+                        class="s_orange_bold">- 26 250 Р
+                    </td>
                 </tr>
                 <tr>
-                    <td data-label="4) Отслеживание оплаты счёта ответственным сотрдуником" class="s_orange_bold">- 31 500 Р</td>
+                    <td data-label="4) Отслеживание оплаты счёта ответственным сотрдуником" class="s_orange_bold">- 31
+                        500 Р
+                    </td>
                 </tr>
             </table>
         </td>
@@ -301,7 +307,9 @@
                     <td data-label="1) Снятие копии с документа" class="s_orange_bold">- 52 500 Р</td>
                 </tr>
                 <tr>
-                    <td data-label="2) Передача протокола заседания на ознакомление участникам" class="s_orange_bold">- 87 500 Р</td>
+                    <td data-label="2) Передача протокола заседания на ознакомление участникам" class="s_orange_bold">-
+                        87 500 Р
+                    </td>
                 </tr>
                 <tr>
                     <td data-label="3) Отслеживание статуса выполнения поручения" class="s_orange_bold">- 52 500 Р</td>
@@ -348,10 +356,14 @@
         <td data-label="Годовые потери по типу операции, руб">
             <table>
                 <tr>
-                    <td data-label="1) Согласование и передача документа на исполнение" class="s_orange_bold">- 105 000 Р</td>
+                    <td data-label="1) Согласование и передача документа на исполнение" class="s_orange_bold">- 105 000
+                        Р
+                    </td>
                 </tr>
                 <tr>
-                    <td data-label="2) Отслеживание статуса выполнения задания по служебной записке" class="s_orange_bold">- 31 500 Р</td>
+                    <td data-label="2) Отслеживание статуса выполнения задания по служебной записке"
+                        class="s_orange_bold">- 31 500 Р
+                    </td>
                 </tr>
             </table>
         </td>
@@ -428,10 +440,14 @@
                     <td data-label="2) Консолидация изменений в документе" class="s_orange_bold">- 17 500 Р</td>
                 </tr>
                 <tr>
-                    <td data-label="3) Передача приказа на подпись руководителю организации" class="s_orange_bold">- 8 750 Р</td>
+                    <td data-label="3) Передача приказа на подпись руководителю организации" class="s_orange_bold">- 8
+                        750 Р
+                    </td>
                 </tr>
                 <tr>
-                    <td data-label="4) Печать секретарём приказа и передача сотрудникам на ознакомление" class="s_orange_bold">- 35 000 Р</td>
+                    <td data-label="4) Печать секретарём приказа и передача сотрудникам на ознакомление"
+                        class="s_orange_bold">- 35 000 Р
+                    </td>
                 </tr>
                 <tr>
                     <td data-label="5) Отслеживание исполнения приказа" class="s_orange_bold">- 26 250 Р</td>
@@ -594,5 +610,12 @@
     </tr>
     </tbody>
 </table>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="toggle"]').change(function () {
+            $(this).parents().next('.hide').toggle();
+        });
+    });
+</script>
 </body>
 </html>

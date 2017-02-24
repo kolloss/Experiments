@@ -613,7 +613,12 @@
 <script>
     $(document).ready(function () {
         $('.main').click(function () {
-            alert('!asdf!!');
+            if ($('.main').data("label") == "-") {
+                $('.main').attr("data-label", "+");
+            }
+            if ($('.main').data("label") == "+") {
+                $('.main').attr("data-label", "-");
+            }
         });
     });
 </script>
